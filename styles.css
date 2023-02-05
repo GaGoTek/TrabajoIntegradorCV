@@ -8,7 +8,7 @@ font-family: sans-serif, Arial, Helvetica;
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 
   }
 
@@ -25,7 +25,74 @@ font-family: sans-serif, Arial, Helvetica;
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-#Experiencia {
-    border: 1px solid blue;
+#button {
+  height: 62px;
+  border: 1px solid white;
+}
+
+nav {
+  margin-bottom: 10px;
+  height: 62px;
+}
+
+#Info-Basic{
+  margin-bottom: 20px;
+
+}
+
+#card_info_basic{
+  background-color: rgb(17, 138, 17);
+  padding: 10px 5px 20px 5px;
+}
+
+.bk_color_cards_inf_basic{
+  background-color: rgb(17, 138, 17);
+
+}
+
+.img_style{
+  padding-top: 20px;
+  width: 170px;
+  height: 220px;
+}
+
+ #experiencia {
+    margin-bottom: 20px; 
     
+}
+
+
+
+#card_exp{
+  background-color: cornflowerblue;
+  height: 290px;
+  /* padding: 10px; */
+  padding: 10px 5px 20px 5px;
+  /* padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 5px; */
+}
+
+.bk_color_cards_exp{
+  background-color: rgb(100, 160, 237);
+
+}
+
+
+.font_white{
+  color: whitesmoke;
+}
+
+.font_blue{
+  color:blue;
+}
+
+.habilidades_estudios{
+  background-color: orangered ;
+}
+
+#info-extendida{
+  margin-top: 60px;
+
 }

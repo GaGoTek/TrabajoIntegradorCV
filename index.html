@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curriculum</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -19,31 +22,102 @@
 
 
     <nav>
-        <button class="col-4">Modo Oscuro</button>
-        <button class="col-4">Version Extendida</button>
-        <button class="col-4">Version Normal</button>
+        <button id="button" type="button" class="btn btn-dark col-4">Modo Oscuro</button>
+        <button id="button" type="button" class="btn btn-primary col-4">Version Extendida</button>
+        <button id="button" type="button" class="btn btn-secondary col-4">Version Normal</button>
 
 
     </nav>
 
     <main>
 
-        <figure>
-            <img src="assets/Foto_Jorge_Rodriguez.jpg" alt="foto de perfil de Jorge Rodriguez">
-        </figure>
+        <section>
+         <article id="Info-Basic">
+            <div id="card_info_basic" class="card border-none h-100">
+                <h2 class="font_white">Mi información</h2>
 
-        <section id="Info-Basico">
-            <h2>Mi información</h2>
+                <div class="card border-success mb-3 bk_color_cards_inf_basic" style="max-width: 540px;">
+                    <div class="row g-0 bk_color_cards_inf_basic">
+                        <div class="col-4">
+                            <img src="assets/Foto_Jorge_Rodriguez.jpg" class="img-fluid rounded-start img_style"
+                                alt="foto de perfil de Jorge Rodriguez">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body bk_color_cards_inf_basic">
+                                <h4 class="font_white">Datos Personales</h4>
+                                <p class="card-text font_white">Nacimiento: 3/3/1988...</p>
+                                <p class="card-text font_white">mail: <a class="font_blue"
+                                        href="jorge.rodriguez@example.com">jorge.rodriguez@example.com</a></p>
+                                <p class="card-text font_white">Dirección: Pasaje Los Alamos 1026</p>
+                                <p class="card-text font_white">Numero de teléfono: (667) 233-7162</p>
 
-            <article>
-                <h3>Datos Personales</h3>
-                <p>Nacimiento: 3/3/1988</p>
-                <p>mail: <a href="jorge.rodriguez@example.com">jorge.rodriguez@example.com</a> </p>
-                <P>Dirección: </P>
-                <p>Numero de teléfono: (667) 233-7162</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+            <article id="experiencia">
+                <div id="card_exp" class="card h-100">
+                    <h3 class="font_white">Experiencia Laboral</h3>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col ">
+                            <div class="card border-info h-100 ">
+
+                                <div class="card-body bk_color_cards_exp">
+                                    <h5 class="font_white">Mi primer trabajo 07/2006</h5>
+                                    <p class="card-text font_white">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit.
+                                        Possimus rem consequatur voluptates perspiciatis. Harum distinctio hic sequi
+                                        autem molestias earum, ab corporis veritatis tenetur sapiente optio inventore
+                                        recusandae quaerat aspernatur numquam rerum ea quas accusantium voluptatibus
+                                        laudantium quasi dicta fugit. A possimus ea explicabo officia non iure
+                                        voluptatibus odit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-info h-100">
+
+                                <div class="card-body bk_color_cards_exp">
+                                    <h5 class="font_white">Mi segundo trabajo 09/2007</h5>
+                                    <p class="card-text font_white">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Ea
+                                        optio maiores iusto consequuntur! Possimus ipsa officia doloribus nam aliquid!
+                                        Adipisci nihil fuga dolores ea fugiat! Quasi commodi quam adipisci laudantium
+                                        magnam consequatur maiores enim illo dolore, voluptatem iste, minus aliquid nam
+                                        numquam totam odit. Omnis magni esse dicta dolore. Dolore assumenda nostrum
+                                        commodi pariatur reprehenderit ut animi voluptatem molestias cupiditate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-info h-100">
+
+                                <div class="card-body bk_color_cards_exp">
+                                    <h5 class="font_white">Mi tercer trabajo 05/2012</h5>
+                                    <p class="card-text font_white">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Cumque molestias magni animi delectus vero saepe inventore eum ratione adipisci
+                                        nihil! Facilis ipsum quasi earum rerum explicabo! Deserunt sapiente assumenda
+                                        sint asperiores harum vel deleniti beatae distinctio eveniet sit cupiditate ea
+                                        numquam illum non nulla eum, eius facere ab dicta debitis laboriosam officia in?
+                                        Temporibus, perspiciatis.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </article>
 
-            <div id="Experiencia">
+
+
+
+
+
+            <!-- <div id="Experiencia">
                 <article>
                     <h3>Experiencia Laboral</h3>
 
@@ -74,11 +148,51 @@
                     </div>
 
                 </article>
-            </div>
+            </div> -->
 
 
-            <div id="Habilidades">
-                <article class="col-6">
+            <article>
+                <div class="row row-cols-1 row-cols-md-2 g-4 border-dark">
+                    <div class="col">
+                        <div class="card border-dark h-100">
+                            <div class="card-body habilidades_estudios">
+                                <h3 class="font_white">Habilidades</h3>
+
+                                <ul class="font_white">
+                                    <li>Diseñador gráfico</li>
+                                    <li>Diseñador web</li>
+                                    <li>Manejo de stock y bases de datos</li>
+                                    <li>Atención al cliente y trato con proveedores</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col border-dark">
+                        <div class="card border-dark h-100">
+
+                            <div class="card-body border-dark habilidades_estudios">
+
+                                <h3 class="font_white">Estudios Cursados</h3>
+
+                                <ul class="font_white">
+                                    <li>Perito Mercantil</li>
+                                    <li>Marketing</li>
+                                    <li>Diseño grafico</li>
+                                    <li>Ingles</li>
+                                    <li>Diseño web</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+
+
+
+
+
+            <!-- <div>
+                <article class="col-6 habilidades_estudios">
                     <h3>Habilidades</h3>
                     <ul>
                         <li>Diseñador gráfico</li>
@@ -88,7 +202,7 @@
                     </ul>
                 </article>
 
-                <article class="col-6">
+                <article class="col-6 habilidades_estudios">
                     <h3>Estudios Cursados</h3>
                     <ul>
                         <li>Perito Mercantil</li>
@@ -98,10 +212,10 @@
                         <li>Diseño web</li>
                     </ul>
                 </article>
-            </div>
+            </div> -->
 
         </section>
-        <section id="Info-Extendida">
+        <section id="info-extendida">
             <h2>Expectativas y aspiraciones</h2>
             <article>
                 <h3>Expectativas Laborales</h3>
