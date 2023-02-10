@@ -25,14 +25,18 @@ font-family: sans-serif, Arial, Helvetica;
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-#button {
+/* .mybutton {
   height: 62px;
   border: 1px solid white;
-}
+} */
 
 nav {
   margin-bottom: 10px;
   height: 62px;
+}
+
+body {
+  padding: 10px 20px 0px 20px;
 }
 
 #Info-Basic{
@@ -93,6 +97,17 @@ nav {
 }
 
 #info-extendida{
-  margin-top: 60px;
+  margin-top: 50px;
 
 }
+
+#expec_asp{
+  margin-bottom: 30px;
+}
+
+.form_foot{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-radius: solid 1px black;
+}
+

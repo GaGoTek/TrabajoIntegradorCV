@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/f4d7ac6fa6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,9 +22,10 @@
 
 
     <nav>
-        <button id="button" type="button" class="btn btn-dark col-4">Modo Oscuro</button>
-        <button id="button" type="button" class="btn btn-primary col-4">Version Extendida</button>
-        <button id="button" type="button" class="btn btn-secondary col-4">Version Normal</button>
+        <button type="button" class="btn btn-dark col-4"> <i class="fa-solid fa-circle-half-stroke"></i> Modo Oscuro</button>
+        <button type="button" class="btn btn-primary col-4"> <i class="fa-solid fa-arrow-down-short-wide"></i> Version Extendida</button>
+        <button type="button" class="btn btn-secondary col-4"> <i class="fa-solid fa-arrow-rotate-left"></i> Version Normal</button>
+        
 
 
     </nav>
@@ -32,31 +33,31 @@
     <main>
 
         <section>
-         <article id="Info-Basic">
-            <div id="card_info_basic" class="card border-none h-100">
-                <h2 class="font_white">Mi información</h2>
+            <article id="Info-Basic">
+                <div id="card_info_basic" class="card border-none h-100">
+                    <h2 class="font_white">Mi información</h2>
 
-                <div class="card border-success mb-3 bk_color_cards_inf_basic" style="max-width: 540px;">
-                    <div class="row g-0 bk_color_cards_inf_basic">
-                        <div class="col-4">
-                            <img src="assets/Foto_Jorge_Rodriguez.jpg" class="img-fluid rounded-start img_style"
-                                alt="foto de perfil de Jorge Rodriguez">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body bk_color_cards_inf_basic">
-                                <h4 class="font_white">Datos Personales</h4>
-                                <p class="card-text font_white">Nacimiento: 3/3/1988...</p>
-                                <p class="card-text font_white">mail: <a class="font_blue"
-                                        href="jorge.rodriguez@example.com">jorge.rodriguez@example.com</a></p>
-                                <p class="card-text font_white">Dirección: Pasaje Los Alamos 1026</p>
-                                <p class="card-text font_white">Numero de teléfono: (667) 233-7162</p>
+                    <div class="card border-success mb-3 bk_color_cards_inf_basic" style="max-width: 540px;">
+                        <div class="row g-0 bk_color_cards_inf_basic">
+                            <div class="col-4">
+                                <img src="assets/Foto_Jorge_Rodriguez.jpg" class="img-fluid rounded-start img_style"
+                                    alt="foto de perfil de Jorge Rodriguez">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body bk_color_cards_inf_basic">
+                                    <h4 class="font_white">Datos Personales</h4>
+                                    <p class="card-text font_white">Nacimiento: 3/3/1988</p>
+                                    <p class="card-text font_white">mail: <a class="font_blue"
+                                            href="jorge.rodriguez@example.com">jorge.rodriguez@example.com</a></p>
+                                    <p class="card-text font_white">Dirección: Pasaje Los Alamos 1026</p>
+                                    <p class="card-text font_white">Numero de teléfono: (667) 233-7162</p>
 
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
             <article id="experiencia">
                 <div id="card_exp" class="card h-100">
@@ -173,7 +174,7 @@
 
                             <div class="card-body border-dark habilidades_estudios">
 
-                                <h3 class="font_white">Estudios Cursados</h3>
+                                <h3 class="font_white">Estudios Cursados <i class="fa-solid fa-graduation-cap"></i></h3>
 
                                 <ul class="font_white">
                                     <li>Perito Mercantil</li>
@@ -185,6 +186,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </article>
 
 
@@ -216,7 +218,7 @@
 
         </section>
         <section id="info-extendida">
-            <h2>Expectativas y aspiraciones</h2>
+            <h2 id="expec_asp">Expectativas y aspiraciones</h2>
             <article>
                 <h3>Expectativas Laborales</h3>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente debitis eligendi illum ipsam
@@ -246,6 +248,30 @@
 
     <footer>
 
+        <form class="form_foot">
+            <div class="border border-primary rounded p-3">
+                <h3>Contácteme</h3>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Direccion de e-mail @</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">complete este campo si desea una respuesta por esta via.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejeme su mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Me interesa su perfil laboral</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+
+
+        <p class="text-body-tertiary blockquote-footer"><em>Este trabajo pertenece a Gabriel E. Gómez copyright &copy;
+                febrero 2023</em></p>
     </footer>
 
 
