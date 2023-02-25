@@ -4,7 +4,7 @@ console.log("Hola Mundo!");
 
 
 document.getElementById("Boton.MdoOsc").onclick = function modoOscuro() {
-    // console.log("capturamos el click");
+    console.log("capturamos el click, MUCHAS GRACIAS POR LOS CONOCIMIENTOS BRINDADOS EN ESTE CURSO ;)");
     document.body.style.backgroundColor = "#000000";
     document.body.style.color = "#FFFFFF";
     
