@@ -98,7 +98,7 @@ body {
 
 #info-extendida{
   margin-top: 50px;
-
+  display: none;
 }
 
 #expec_asp{
@@ -111,3 +111,12 @@ body {
   border-radius: solid 1px black;
 }
 
+#emailHelp{
+  font-style: italic;
+  color: rgb(170, 170, 170);
+}
+
+#copyright{
+  font-style: italic;
+  color: rgb(170, 170, 170);
+}
